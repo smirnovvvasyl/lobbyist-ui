@@ -12,13 +12,14 @@ import "./assets/css/nucleo-svg.css"
 import "./assets/css/app.css"
 import "./index.scss";
 import { NotificationContainer } from 'react-notifications';
+import { config } from "./config/config";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_GRAPQLENDPOINT,
+  uri: config.REACT_APP_GRAPQLENDPOINT,
   cache: new InMemoryCache(),
 });
 

@@ -22,6 +22,7 @@ import { colors } from "../../common";
 import switchNetwork from "../header/switchchain";
 import { useSelector } from "../../redux/store";
 import { RootState } from "../../redux/store";
+import { config } from "../../config/config";
 
 type Props = {};
 
@@ -32,7 +33,7 @@ const SidebarMenu = (props: Props) => {
   const chain: any = useSelector(
     (state: RootState) => state.chain.id
   );
-  const { PUBLIC_URL } = process.env;
+  const { PUBLIC_URL } = config;
   const theme = useTheme();
   const { pathname } = useLocation();
   const isMobile = useMediaQuery(theme.breakpoints.down("mlg"));

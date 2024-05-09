@@ -7,8 +7,9 @@ import ProposalSymbolPage from "../pages/proposalSymbol";
 import ProposalSymbolVotePage from "../pages/proposalSymbolVote";
 import { ReactApp } from "../components";
 import NotPage from "../pages/NotPage";
+import { config } from "../config/config";
 
-const { PUBLIC_URL } = process.env;
+const { PUBLIC_URL } = config;
 
 const AppRoutes: FC = () => {
   return (

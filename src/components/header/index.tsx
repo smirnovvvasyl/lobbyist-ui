@@ -34,6 +34,7 @@ import { useSelector } from "../../redux/store";
 import { RootState } from "../../redux/store";
 import { Chainscan } from "../../chainscan";
 import { Network } from "../../@types";
+import { config } from "../../config/config";
 
 interface SupportedChains {
     [chainId: string]: Network;
@@ -49,7 +50,7 @@ const supportedChains: SupportedChains = {
         chain_id: '0x1',
         providers: ['walletlink'],
         // , 'portis', 'fortmatic'
-        rpc_url: `https://mainnet.infura.io/v3/${process.env.REACT_APP_INFURA_KEY}`,
+        rpc_url: `https://mainnet.infura.io/v3/${config.REACT_APP_INFURA_KEY}`,
         block_explorer: 'https://etherscan.io',
     },
     '56': {
@@ -61,7 +62,7 @@ const supportedChains: SupportedChains = {
         chain_id: '56',
         providers: ['walletlink'],
         // , 'portis', 'fortmatic'
-        rpc_url: `https://mainnet.infura.io/v3/${process.env.REACT_APP_INFURA_KEY}`,
+        rpc_url: `https://mainnet.infura.io/v3/${config.REACT_APP_INFURA_KEY}`,
         block_explorer: 'https://bscscan.com/',
     },
     '0xa': {
@@ -83,7 +84,7 @@ const supportedChains: SupportedChains = {
         network_id: 137,
         chain_id: '0x89',
         providers: ['walletconnect'],
-        rpc_url: `https://polygon-mainnet.infura.io/v3/${process.env.REACT_APP_INFURA_KEY}`,
+        rpc_url: `https://polygon-mainnet.infura.io/v3/${config.REACT_APP_INFURA_KEY}`,
         block_explorer: 'https://polygonscan.com',
     },
     '0xa4b1': {

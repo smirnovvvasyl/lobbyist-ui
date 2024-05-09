@@ -3,8 +3,9 @@ import { setCurrentProposal } from "../redux/slices/proposal";
 import { dispatch } from "../redux/store";
 import { Tokens } from "../token";
 import { Coins } from "../blockchain";
+import { config } from "../config/config";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVERENDPOINT;
+axios.defaults.baseURL = config.REACT_APP_SERVERENDPOINT;
 
 var baseURL = "https://score.snapshot.org/";
 

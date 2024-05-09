@@ -6,6 +6,7 @@ import variableAddresses from "../contracts/contracts/variableAddresses.json";
 import { Tokens } from "../token";
 import { History } from "../@types/proposal";
 import { Chainscan } from "../chainscan";
+import { config } from "../config/config";
 var history: History[] = [];
 
 if (localStorage.getItem('history')) {
@@ -233,7 +234,7 @@ const Claim = async (props: any) => {
 
 const Coins = async (ids: string) => {
     try {
-        var url = `https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&x_cg_pro_api_key=${process.env.REACT_APP_COINGECKO_API}`;
+        var url = `https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&x_cg_pro_api_key=${config.REACT_APP_COINGECKO_API}`;
         let data = await axios.get(url);
         return data.data[0].current_price;
     } catch (error: any) {
