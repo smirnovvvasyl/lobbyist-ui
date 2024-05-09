@@ -1,0 +1,14 @@
+{
+  "short_name": "Lobbyist",
+  "name": "Lobbyist",
+  "description": "For all proposals",
+  "providedBy": {
+    "name": "Lobbyist",
+    "url": "https://lobbyist.vote/"
+  },
+  "iconPath": "images/logos/logo192.svg",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

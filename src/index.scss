@@ -1,0 +1,496 @@
+@use "./styles/index.scss" as main;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+$hamburger-layer-color: #fff;
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";
+
+html {
+    position: relative;
+    overflow: hidden;
+}
+
+iframe {
+    display: none !important;
+    z-index: -100000000000000000000 !important;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1b1e29;
+    box-shadow: inset 0 0 2px #c2c2c2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #252938;
+}
+
+.app-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.walletconnect-modal__base {
+    color: #4388fb !important;
+    // background-color: #1b1e29 !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+#root {
+    height: 100%;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.wallet-modal-container {
+    max-width: 500px;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #1b1e29;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+
+    .wallet-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+        .close {
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .wallet-history {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .clear {
+            cursor: pointer;
+        }
+    }
+
+    .blue {
+        color: #4388fb;
+    }
+
+    .wallet-modal-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background: #232734;
+        font-size: 15px;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        color: #7f8083;
+
+        .mg-m-1 {
+            margin-bottom: 10px;
+        }
+
+        .font-1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .address {
+            color: white;
+        }
+
+        .cursorpoint {
+            color: #606677;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .view {
+            cursor: pointer;
+            color: #606677;
+
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .wallet-modal-footer {
+        display: flex;
+        font-size: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width:577px) {
+    .wallet-modal-container {
+        width: 100%;
+    }
+}
+
+.justify-s {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.w10 {
+    width: 100%;
+}
+
+.content {
+    max-width: 1100px;
+}
+
+body.show-menu .app>.main {
+    display: none;
+}
+
+.px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.pt-6 {
+    padding-top: 1.5rem;
+}
+
+.pb-12 {
+    padding-bottom: 3rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.\!flex-col {
+    flex-direction: column !important;
+}
+
+.w-80 {
+    width: 20rem;
+}
+
+.basis-3\/12 {
+    flex-basis: 25%;
+}
+
+.basis-9\/12 {
+    flex-basis: 75%;
+}
+
+.basis-1\/12 {
+    flex-basis: 8.333333%;
+}
+
+.basis-8\/12 {
+    flex-basis: 66.666667%;
+}
+
+.basis-2\/12 {
+    flex-basis: 16.666667%;
+}
+
+.\!font-bold {
+    font-weight: 700;
+}
+
+.\!p-0 {
+    padding: 0px !important;
+}
+
+.\!py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mlg\:\!justify-start {
+    justify-content: flex-start !important;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.\!my-4 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.\!px-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.gap-5 {
+    gap: 1.25rem;
+    display: grid;
+}
+
+.gap-custom {
+    gap: 1.25rem;
+    grid-template-columns: auto auto;
+}
+
+.grid-cols-custom-6 {
+    grid-template-columns: 50px 190px 190px 115px 115px 100px auto
+}
+
+.grid-cols-custom-7 {
+    grid-template-columns: 40px 190px 190px 100px 150px 100px auto
+}
+
+.card-item {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.gap-8 {
+    gap: 2rem;
+    display: grid;
+}
+
+.gap-14 {
+    gap: 3.5rem;
+    display: grid;
+}
+
+.gap-20 {
+    gap: 5rem;
+    display: grid;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.bg-black {
+    --tw-bg-opacity: 1;
+    background-color: #282931;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-60 {
+    height: 15rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.css-2ob6df-MuiCardContent-root {
+    padding: 16px;
+    background-color: #282931;
+    border-radius: 1rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bg-\[\#1f2028\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 20 21 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 911px) {
+    .justify-start {
+        justify-content: flex-start !important;
+    }
+
+    .items-start {
+        align-items: flex-start !important;
+    }
+
+    .h-full {
+        height: 100% !important;
+    }
+
+    .flex-col-header {
+        flex-direction: column !important;
+    }
+
+    .mlg\pt-12 {
+        padding-top: 3rem;
+    }
+
+    .mlg\:px-0 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .mlg\:hidden {
+        display: none;
+    }
+
+    .mlg\:flex {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 910px) {
+    .mlgx\:w-full {
+        width: 100% !important;
+    }
+
+    .proposer-button {
+        min-width: 0 !important;
+    }
+
+    .proposer-flex {
+        display: block !important;
+    }
+
+    .header-1 {
+        margin: 10px 0 0 auto;
+    }
+}
+
+@media (max-width:630px) {
+    .card-item {
+        margin: 0;
+        align-items: inherit;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .md\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .md\:p-20 {
+        padding: 5rem;
+    }
+
+    .md\:p-12 {
+        padding: 3rem;
+    }
+
+    .md\:mb-20 {
+        margin-bottom: 5rem !important;
+    }
+
+    .md\:text-right {
+        text-align: right !important;
+    }
+
+    .md\:pt-0 {
+        padding-top: 0px;
+    }
+
+    .md\:bottom-0 {
+        bottom: 0px;
+    }
+
+    .md\:right-0 {
+        right: 0px;
+    }
+
+    .md\:absolute {
+        position: absolute;
+    }
+}
+
+@media (max-width:612px) {
+    .dp\:hidden {
+        display: none;
+    }
+}
+
+@media (max-width:1350px) {
+    .grid-cols-custom-6 {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .grid-cols-custom-7 {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+}

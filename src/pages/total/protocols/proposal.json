@@ -1,0 +1,178 @@
+[
+    {
+        "protocol": "qidao",
+        "text": "QiDAO",
+        "href": "/proposal/qidao",
+        "chains": [
+            {
+                "name": "../../assets/chains/bsc.png",
+                "id": 56
+            },
+            {
+                "name": "../../assets/chains/avax.png",
+                "id": 43114
+            },
+            {
+                "name": "../../assets/chains/fantom.svg",
+                "id": 250
+            },
+            {
+                "name": "../../assets/chains/polygon.svg",
+                "id": 137
+            },
+            {
+                "name": "../../assets/chains/arbitrum.svg",
+                "id": 42161
+            },
+            {
+                "name": "../../assets/chains/optimism.png",
+                "id": 10
+            },
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/pro-qidao.svg",
+        "multiChain": true,
+        "chainNames": "Ethereum/Optimism/Arbitrum/Polygon/Fantom/Avalanche/Binance"
+    },
+    {
+        "protocol": "aurafinance",
+        "text": "Aura",
+        "href": "/proposal/aurafinance",
+        "chains": [
+            {
+                "name": "../../assets/chains/optimism.png",
+                "id": 10
+            },
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/aura.svg",
+        "multiChain": false,
+        "chainNames": "Ethereum/Optimism"
+    },
+    {
+        "protocol": "saddlefinance",
+        "text": "Saddle",
+        "href": "/proposal/saddlefinance",
+        "chains": [
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/saddle.svg",
+        "multiChain": false,
+        "chainNames": "Ethereum"
+    },
+    {
+        "protocol": "aave",
+        "text": "Aave",
+        "href": "/proposal/aave",
+        "chains": [
+            {
+                "name": "../../assets/chains/avax.png",
+                "id": 43114
+            },
+            {
+                "name": "../../assets/chains/polygon.svg",
+                "id": 137
+            },
+            {
+                "name": "../../assets/chains/arbitrum.svg",
+                "id": 42161
+            },
+            {
+                "name": "../../assets/chains/optimism.png",
+                "id": 10
+            },
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/pro-aave.svg",
+        "multiChain": false,
+        "chainNames": "Ethereum/Optimism/Arbitrum/Polygon/Avalanche"
+    },
+    {
+        "protocol": "ribbon",
+        "text": "Ribbon",
+        "href": "/proposal/ribbon",
+        "chains": [
+            {
+                "name": "../../assets/chains/avax.png",
+                "id": 43114
+            },
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/ribbon.svg",
+        "multiChain": false,
+        "chainNames": "Ethereum/Avalanche"
+    },
+    {
+        "protocol": "beets",
+        "text": "Beethovenx",
+        "href": "/proposal/beets",
+        "chains": [
+            {
+                "name": "../../assets/chains/fantom.svg",
+                "id": 250
+            }
+        ],
+        "icon": "../../assets/icons/beethovenx.svg",
+        "multiChain": false,
+        "chainNames": "Fantom"
+    },
+    {
+        "protocol": "onx-finance",
+        "text": "Onx",
+        "href": "/proposal/onx",
+        "chains": [
+            {
+                "name": "../../assets/chains/bsc.png",
+                "id": 56
+            },
+            {
+                "name": "../../assets/chains/avax.png",
+                "id": 43114
+            },
+            {
+                "name": "../../assets/chains/fantom.svg",
+                "id": 250
+            },
+            {
+                "name": "../../assets/chains/polygon.svg",
+                "id": 137
+            },
+            {
+                "name": "../../assets/chains/eth.svg",
+                "id": 1
+            }
+        ],
+        "icon": "../../assets/icons/onx.svg",
+        "multiChain": false,
+        "chainNames": "Ethereum/Polygon/Fantom/Avalanche/Binance"
+    },
+    {
+        "protocol": "vesqdao",
+        "text": "VESQ",
+        "href": "/proposal/vesqdao",
+        "chains": [
+            {
+                "name": "../../assets/chains/polygon.svg",
+                "id": 137
+            }
+        ],
+        "icon": "../../assets/icons/vesq.svg",
+        "multiChain": false,
+        "chainNames": "Polygon"
+    }
+]

@@ -1,0 +1,37 @@
+@use "../../styles/index.scss" as main;
+
+.input {
+  background-color: #1f2028;
+
+  :focus {
+    outline: white !important;
+    border-color: white !important;
+    --tw-ring-shadow: inherit !important;
+  }
+
+  img {
+    display: inline;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+  }
+}
+
+.menu {
+  &Item {
+    background-color: rgb(84, 90, 95);
+
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 3px;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      background-color: rgb(66, 73, 79) !important;
+    }
+  }
+
+}
